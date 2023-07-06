@@ -1,0 +1,744 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+<style type="text/css">
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                          
+    <title>ezsubtreeremove.php / Generic / Scripts / Reference / 3.10 / Technical manual / eZ Publish / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="eZ Publish Documentation" />
+                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="eZ Publish" />
+    <link rel="Home" href="https://doc.ez.no/" title="Doc front page" />
+<link rel="Search" href="https://doc.ez.no/content/advancedsearch" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+<div><a href="https://www.ibexa.co"><img class="logotype" width="100" height="50" src="https://ibexa-lookandfeel.s3-eu-west-1.amazonaws.com/ibexa/assets/images/ibexa_logo.svg" alt="ibexa"></a></div>
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="http://ez.no/">ez.no</a> /
+                        <a href="https://doc.ez.no/">documentation</a>
+        
+                        /
+                            <a href="https://doc.ez.no/eZ-Publish">ez publish</a>
+        
+                        /
+                            <a href="../../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../../3.10.html">3.10</a>
+        
+                        /
+                            <a href="../../../Reference.html">reference</a>
+        
+                        /
+                            <a href="../../Scripts.html">scripts</a>
+        
+                        /
+                            <a href="../Generic.html">generic</a>
+        
+                        /
+                            ezsubtreeremove.php
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 5.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="https://doc.ez.no/display/MAIN/eZ+Documentation+Center">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="https://doc.ez.no/pages/viewpage.action?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../../3.10.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Reference.html" title="">
+	    	    		                    		    <span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Datatypes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Datatypes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Content-classes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content classes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Modules.html" title="">
+	    	    		                    		    <span class="node-name-normal">Modules</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Views.html" title="">
+	    	    		                    		    <span class="node-name-normal">Views</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Objects.html" title="">
+	    	    		                    		    <span class="node-name-normal">Objects</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Workflow-events.html" title="">
+	    	    		                    		    <span class="node-name-normal">Workflow events</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-operators.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template operators</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-control-structures.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template control structures</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-override-conditions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template override conditions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-fetch-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template fetch functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Template-PDF-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template PDF functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Configuration-files.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuration files</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Libraries.html" title="">
+	    	    		                    		    <span class="node-name-normal">Libraries</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../XML-tags.html" title="">
+	    	    		                    		    <span class="node-name-normal">XML tags</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../Scripts.html" title="">
+	    	    		                    		    <span class="node-name-normal">Scripts</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>ezsubtreeremove.php</h1>
+</div>
+
+<h3>Summary</h3>
+Safely removes large subtrees.
+
+<h3>Location</h3>    ./bin/php/ezsubtreeremove.php<h3>Parameters</h3><p>
+<a href="ezsubtreeremove.php.html#colors">colors</a><br/>
+
+<a href="ezsubtreeremove.php.html#debug">debug</a><br/>
+
+<a href="ezsubtreeremove.php.html#help">help</a><br/>
+
+<a href="ezsubtreeremove.php.html#ignore-trash">ignore-trash</a><br/>
+
+<a href="ezsubtreeremove.php.html#logfiles">logfiles</a><br/>
+
+<a href="ezsubtreeremove.php.html#no-colors">no-colors</a><br/>
+
+<a href="ezsubtreeremove.php.html#no-logfiles">no-logfiles</a><br/>
+
+<a href="ezsubtreeremove.php.html#nodes-id">nodes-id</a><br/>
+
+<a href="ezsubtreeremove.php.html#quiet">quiet</a><br/>
+
+<a href="ezsubtreeremove.php.html#siteaccess">siteaccess</a><br/>
+</p>
+
+    <a name="colors"></a>
+    <h4>-c, --colors</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Use ANSI colors when generating debug output (default).</p>    </div>
+
+    <a name="debug"></a>
+    <h4>-d[&lt;option&gt;[,&lt;option2&gt;...]], --debug[=&lt;option&gt;[,&lt;option2&gt;...]]</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Output debug information. The following options can be used to control what the debug output should include: &quot;all&quot; (everything), &quot;accumulator&quot; (accumulators), &quot;include&quot; (included files), &quot;timing&quot; (timing points), &quot;error&quot; (errors), &quot;warning&quot; (warnings), &quot;notice&quot; (notices).</p>    </div>
+
+    <a name="help"></a>
+    <h4>-h, --help</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Output information about the script and supported parameters.</p>    </div>
+
+    <a name="ignore-trash"></a>
+    <h4>--ignore-trash</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Permanently delete the specified subtrees. Without this parameter, the content will be moved to the trash (note that the tree structure will be lost forever).</p>    </div>
+
+    <a name="logfiles"></a>
+    <h4>--logfiles</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Generate log files. This parameter must be used together with the debug parameter (&quot;-d&quot; or &quot;--debug&quot;). The log files (for example &quot;warning.log&quot;) will be stored in the &quot;var/log&quot; directory of the eZ Publish installation.</p>    </div>
+
+    <a name="no-colors"></a>
+    <h4>--no-colors</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Do not use ANSI colors when generating debug output.</p>    </div>
+
+    <a name="no-logfiles"></a>
+    <h4>--no-logfiles</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Do not generate log files (default).</p>    </div>
+
+    <a name="nodes-id"></a>
+    <h4>--nodes-id=&lt;node_id&gt;[,&lt;node_id2&gt;…]</h3>
+    <div style="margin-left:35px;">
+        
+ <p>The node ID of the subtree or subtrees that should be removed. In case multiple subtrees are to be removed, their node IDs must be provided as a comma separated list. Both the specified nodes and their sub items will be removed. This parameter is required.</p>    </div>
+
+    <a name="quiet"></a>
+    <h4>-q, --quiet</h3>
+    <div style="margin-left:35px;">
+        
+ <p>Run the script in &quot;quiet&quot; mode. No output will be generated.</p>    </div>
+
+    <a name="siteaccess"></a>
+    <h4>-s &lt;siteaccess&gt;, --siteaccess=&lt;siteaccess&gt;</h3>
+    <div style="margin-left:35px;">
+        
+ <p>The siteaccess to run the script for. If omitted, the <a href="../../Configuration-files/site.ini/SiteSettings/DefaultAccess.html" target="_self">default siteaccess</a> will be used.</p>    </div>
+
+<h3>Description</h3>
+ <p>This script makes it possible to remove subtrees. Typically, it is used to remove subtrees containing more nodes than the &quot;<a href="../../Configuration-files/content.ini/RemoveSettings/MaxNodesRemoveSubtree.html" target="_self">MaxNodesRemoveSubtree</a>&quot; setting allows (these cannot be removed from within the administration interface).</p> <p>By default, the script will remove content in the same way as it is done from within the administration interface when the &quot;Move to trash&quot; checkbox is selected. In other words, the removed objects will end up in the <a href="../../../../../User-manual/3.10/Daily-tasks/Removing-content.html#trash" target="_self">trash</a> while the tree structure itself (the nodes) will be lost forever. The &quot;--ignore-trash&quot; parameter allows objects to be removed without being put in the trash first.</p> <p>An object processed by this script will only be put in the trash (or removed when the &quot;--ignore-trash&quot; parameter is used) if it doesn't have other/additional locations than the ones that were specified using the &quot;--nodes-id&quot; parameter.</p> <p>Note that the script will access the node tree as a certain user. This is controlled by the &quot;<a href="../../Configuration-files/site.ini/UserSettings/UserCreatorID.html" target="_self">UserCreatorID</a>&quot; setting. If the specified user is not allowed to remove a particular subtree, the script will output an error message.</p>
+<h3>Examples</h3>
+    <a name="eztoc85712_0_0_1" id="eztoc85712_0_0_1"></a><h4>Example 1</h4> <pre class="wordwrap"><span class="line">php bin/php/ezsubtreeremove.php --nodes-id=65</span>
+</pre> <p>Remove node 65 and all its sub items. If the object encapsulated by node 65 does not have other locations, it will be moved to the trash.</p>       <a name="eztoc85712_0_0_2" id="eztoc85712_0_0_2"></a><h4>Example 2</h4> <pre class="wordwrap"><span class="line">php bin/php/ezsubtreeremove.php --nodes-id=65 --ignore-trash</span>
+</pre> <p>Remove node 65 and all its sub items. If the object encapsulated by node 65 does not have other locations, it will be permanently removed.</p>       <a name="eztoc85712_0_0_3" id="eztoc85712_0_0_3"></a><h4>Example 3</h4> <pre class="wordwrap"><span class="line">php bin/php/ezsubtreeremove.php --nodes-id=60,65,78</span>
+</pre> <p>Nodes 60, 65, 78 and all their sub items will be removed.</p>   
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Julia Shymova&nbsp;(13/11/2007 4:32 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Svitlana Shatokhina&nbsp;(20/03/2008 10:35 am)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<p>There are no comments.</p>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="17498" />
+<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/Technical-manual/3.10/Reference/Scripts/Generic/ezsubtreeremove.php" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-303624-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+<script type="text/javascript">
+(function()
+{var ff=document.createElement('script');ff.type='text/javascript';ff.async=true;ff.src='https://secure.liveviewer.ez.no/statjs/sst-120-1304513615/stat.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ff,s);}
+)();
+</script>
+
+
+</body>
+</html>
+
+<!-- th[eZ] 20050804 -->

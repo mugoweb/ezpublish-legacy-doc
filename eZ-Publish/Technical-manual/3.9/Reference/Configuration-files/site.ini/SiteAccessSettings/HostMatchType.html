@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+<style type="text/css">
+    @import url(../../../../../../../extension/ezdoc/design/doc/stylesheets/core.css);
+    @import url(../../../../../../../extension/ezdoc/design/doc/stylesheets/classes.css);
+    @import url(../../../../../../../extension/ezdoc/design/doc/stylesheets/doc.css);
+    @import url(../../../../../../../extension/ezdoc/design/doc/stylesheets/print.css) print;</style>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../extension/ezdoc/design/doc/stylesheets/print.css" media="print" />
+
+<!-- IE conditional comments; for bug fixes for different IE versions -->
+<!--[if IE 5]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie5.css);    </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte.css); </style>     <![endif]-->
+<!--[if lte IE 6]> <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6lte-doc.css); </style> <![endif]-->
+<!--[if IE 6]>     <style type="text/css"> @import url(/extension/ezdoc/design/doc/stylesheets/ie6.css);    </style>     <![endif]-->
+
+<!-- Load special stylesheet (if necessary) for newer Netscape decendants, Mozilla and Firefox, using the Gecko renderer -->
+<script type="text/javascript"><!-- if ((navigator.userAgent.indexOf("Gecko") != -1)&&(navigator.userAgent.indexOf("KHTML") == -1)) document.write("<style type=\"text/css\">@import url(/extension/ezdoc/design/doc/stylesheets/gecko.css);</style>"); --></script>
+
+<script type="text/javascript" src="../../../../../../../extension/ezdoc/design/doc/javascripts/mainmenu-hover.js"></script>
+<script type="text/javascript" src="../../../../../../../extension/ezdoc/design/doc/javascripts/dropdownmenu.js"></script>
+<script type="text/javascript" src="../../../../../../../extension/ezdoc/design/doc/javascripts/ezno-searchbox.js"></script>
+                                                                
+    <title>HostMatchType / [SiteAccessSettings] / site.ini / Configuration files / Reference / 3.9 / Technical manual / eZ Publish / Documentation - Doc</title>
+
+    
+    
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <meta http-equiv="Content-language" content="en-GB" />
+
+    
+                <meta name="author" content="eZ systems" />
+                    <meta name="copyright" content="eZ systems" />
+                    <meta name="description" content="eZ Publish Documentation" />
+                    <meta name="keywords" content="eZ Publish, documentation, manual, reference, eZ systems" />
+        
+    <meta name="generator" content="eZ Publish" />
+    <link rel="Home" href="https://doc.ez.no/" title="Doc front page" />
+<link rel="Search" href="https://doc.ez.no/content/advancedsearch" title="Search Doc" />
+<link rel="Shortcut icon" href="../../../../../../../extension/ezdoc/design/doc/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body onload="initDocSearch();menuInit();">
+
+<!-- Complete page area: START -->
+<div id="page">
+
+
+<div><a href="https://www.ibexa.co"><img class="logotype" width="100" height="50" src="https://ibexa-lookandfeel.s3-eu-west-1.amazonaws.com/ibexa/assets/images/ibexa_logo.svg" alt="ibexa"></a></div>
+<div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
+
+<!-- Path area: START -->
+<div id="path">
+
+<div id="page-width4">
+<h2 class="hide">Path</h2>
+
+<!-- Path content: START -->
+<p> <a href="http://ez.no/">ez.no</a> /
+                        <a href="https://doc.ez.no/">documentation</a>
+        
+                        /
+                            <a href="https://doc.ez.no/eZ-Publish">ez publish</a>
+        
+                        /
+                            <a href="../../../../../../Technical-manual.html">technical manual</a>
+        
+                        /
+                            <a href="../../../../../3.9.html">3.9</a>
+        
+                        /
+                            <a href="../../../../Reference.html">reference</a>
+        
+                        /
+                            <a href="../../../Configuration-files.html">configuration files</a>
+        
+                        /
+                            <a href="../../site.ini.html">site.ini</a>
+        
+                        /
+                            <a href="../SiteAccessSettings.html">[siteaccesssettings]</a>
+        
+                        /
+                            hostmatchtype
+        
+            </p>
+<!-- Path content: END -->
+
+</div>
+
+</div>
+<!-- Path area: END -->
+
+<hr class="hide" />
+
+<!-- Main area: START -->
+                                    <div id="ezp5disclaimer">
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 5.x.<br/>
+                For 5.x documentation covering <em>Platform</em> see <a href="https://doc.ez.no/display/MAIN/eZ+Documentation+Center">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="https://doc.ez.no/pages/viewpage.action?pageId=11403666">5.x Architecture overview</a>.</p>
+            </div>
+            
+<div id="page-width5">
+<div id="main" class="float-break">
+
+
+<div class="template-design area-docmenu-normal">
+<div class="template-module">
+<div class="template-object">
+<div id="contentmenu">
+                        <div class="attribute-heading"><h2 class="bullet"><a href="../../../../../3.9.html">Table of contents</a></h2></div>
+<div class="boxcontent">
+
+<map id="contentstructure">
+
+    
+                                                                        
+            <ul>
+	    
+                                                        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../../Installation.html" title="">
+	    	    		                    		    <span class="node-name-normal">Installation</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../../Concepts-and-basics.html" title="">
+	    	    		                    		    <span class="node-name-normal">Concepts and basics</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../../Templates.html" title="">
+	    	    		                    		    <span class="node-name-normal">Templates</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter"
+	    
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../../Features.html" title="">
+	    	    		                    		    <span class="node-name-normal">Features</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+		    		class="topchapter-selected  "
+		
+	    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../../Reference.html" title="">
+	    	    		                    		    <span class="node-name-normal">Reference</span>
+                    			    	    		</a>
+			           </div>
+        
+            <ul>
+	    
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Datatypes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Datatypes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Content-classes.html" title="">
+	    	    		                    		    <span class="node-name-normal">Content classes</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Modules.html" title="">
+	    	    		                    		    <span class="node-name-normal">Modules</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Views.html" title="">
+	    	    		                    		    <span class="node-name-normal">Views</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Objects.html" title="">
+	    	    		                    		    <span class="node-name-normal">Objects</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Workflow-events.html" title="">
+	    	    		                    		    <span class="node-name-normal">Workflow events</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Template-operators.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template operators</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Template-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Template-control-structures.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template control structures</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Template-override-conditions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template override conditions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Template-fetch-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template fetch functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Template-PDF-functions.html" title="">
+	    	    		                    		    <span class="node-name-normal">Template PDF functions</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Configuration-files.html" title="">
+	    	    		                    		    <span class="node-name-normal">Configuration files</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../Libraries.html" title="">
+	    	    		                    		    <span class="node-name-normal">Libraries</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                
+                                                    
+	<li 
+					    			class="last"
+		    		    			    	    >
+	    <div>
+	    
+	    
+
+	    
+	    
+	    
+	    			    	    
+	    
+	    		<a class="nodetext" href="../../../XML-tags.html" title="">
+	    	    		                    		    <span class="node-name-normal">XML tags</span>
+                    			    	    		</a>
+			           </div>
+        
+                                    </li>
+            
+                                            </ul>
+                                        </li>
+            
+                                            </ul>
+                        
+            
+</map>
+
+</div>            
+</div>
+</div>
+</div>
+</div>
+<div class="area-docmain-normal">
+<div class="template-design">
+<div class="template-module content-view-full">
+<div class="template-object">
+
+<div class="attribute-heading">
+<h1>HostMatchType</h1>
+</div>
+<h3>Summary</h3>
+Sets which type of host matching to use to select the siteaccess.<h3>Usage</h3>
+<pre class="pfix"> <p>HostMatchType=disabled|map|element|text|regexp</p></pre><h3>Description</h3>
+ <p>Use host match when you want to select the siteaccess based on the host part of the URL. Host matching can be used in four different modes or be disabled completely. The available options are:</p>
+<ul>
+ <li><div>  <b>disabled</b> - Disables host matching. If host matching is specified in the <a href="MatchOrder.html" target="_self">MatchOrder</a> setting it will be ignored. </div></li> <li><div>  <b>map</b> - Select the siteaccess based on the complete hostname. Specify the mapping between a hostname and the siteaccess to use with the <a href="HostMatchMapItems.html" target="_self">HostMatchMapItems</a> setting. </div></li> <li><div>  <b>element</b> - The siteaccess is specified by a one of the subdomains that are part of the hostname. Select which part of the hostname (separated by dots) that specifies the siteaccess with the <a href="HostMatchElement.html" target="_self">HostMatchElement</a> setting. </div></li> <li><div>  <b>text</b> - The siteaccess is given by some arbitrary part of the hostname with a fixed pre and post text. Set the pre and post text with the <a href="HostMatchSubtextPre.html" target="_self">HostMatchSubtextPre</a> and <a href="HostMatchSubtextPost.html" target="_self">HostMatchSubtextPost</a> settings. </div></li> <li><div>  <b>regexp</b> - Use a regular expression to obtain the siteaccess name from the hostname. Set the regular expression and the submatch to use with the <a href="HostMatchRegexp.html" target="_self">HostMatchRegexp</a> and <a href="HostMatchRegexpItem.html" target="_self">HostMatchRegexpItem</a> settings. </div></li> 
+</ul>
+<h3>Examples</h3>
+   <a name="eztoc65958_0_1" id="eztoc65958_0_1"></a><h3>Map matching</h3> <pre class="wordwrap copytoclipboard"><span class="line">HostMatchType=map</span>
+<span class="line">HostMatchMapItems[]=mydomain.no;user</span>
+<span class="line">HostMatchMapItems[]=admin.mydomain.no;admin</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\nHostMatchType=map\r\nHostMatchMapItems[]=mydomain.no;user\r\nHostMatchMapItems[]=admin.mydomain.no;admin\r\n' ); return false;" /></p>
+<![endif]--> <p>This configuration uses the map hostmatching type. If the site is acccessed using the domain mydomain.no the siteaccess named <i>user</i> is used. If the domain admin.mydomain.no is used the <i>admin</i> siteaccess is used instead.</p>   <a name="eztoc65958_0_2" id="eztoc65958_0_2"></a><h3>Element matching</h3> <pre class="wordwrap copytoclipboard"><span class="line">HostMatchType=element</span>
+<span class="line">HostMatchElement=1</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\nHostMatchType=element\r\nHostMatchElement=1\r\n' ); return false;" /></p>
+<![endif]--> <p>This configuration uses the second element in the hostname as siteaccess using element matching. For example the hostname first.second.third.com yields the siteaccess <i>second</i>.</p>   <a name="eztoc65958_0_3" id="eztoc65958_0_3"></a><h3>Text matching</h3> <pre class="wordwrap copytoclipboard"><span class="line">HostMatchType=text</span>
+<span class="line">HostMatchSubtextPre=my</span>
+<span class="line">HostMatchSubtextPost=site.ez.no</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\nHostMatchType=text\r\nHostMatchSubtextPre=my\r\nHostMatchSubtextPost=site.ez.no\r\n' ); return false;" /></p>
+<![endif]--> <p>This text mathcing configuration uses everything between my and site.ez.no as the siteaccess. E.g myadminsite.ez.no would produce the siteaccess <i>admin</i>. The hostname myusersite.ez.no produces the siteaccessname <i>user</i>.</p>   <a name="eztoc65958_0_4" id="eztoc65958_0_4"></a><h3>Regexp matching</h3> <pre class="wordwrap copytoclipboard"><span class="line">HostMatchType=regexp</span>
+<span class="line">HostMatchRegexp=^(.+)\.example\.com</span>
+<span class="line">HostMatchRegexpItem=1</span>
+</pre><!--[if IE]>
+<p class="copytoclipboard"><img src="/extension/ezdoc/design/doc/images/copytoclipboard.gif" height="16" width="16" alt="Copy to clipboard" title="Copy to clipboard" onclick="window.clipboardData.setData( 'text', '\r\nHostMatchType=regexp\r\nHostMatchRegexp=^(.+)\.example\.com\r\nHostMatchRegexpItem=1\r\n' ); return false;" /></p>
+<![endif]--> <p>This regexp setup uses the regular expression ^(.+)\.example\.com to match anything in front of .example.com. The first match is set up to hold the siteaccess. E.g the hostname test.example.com yields the siteaccess <i>test</i>.</p>  
+
+<div class="break"></div><div class="pageinfo float-break">
+<div class="created">
+
+
+<p><label>Written by:</label>Frederik Holljen&nbsp;(31/03/2005 2:15 pm)</p>
+</div>
+<div class="modified">
+<p><label>Last updated by:</label>Frederik Holljen&nbsp;(31/03/2005 2:50 pm)</p>
+</div></div>
+<hr class="hide" />
+
+</div>
+</div>
+</div>
+
+<div id="comments" class="class-comment">
+<div class="content-view-children">
+
+<h1>Comments</h1>
+<div id="comments-content">
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/content/action">
+
+<div id="comment13528" class="attribute-heading">
+<h2>can i use two matching types?</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Thursday 09 November 2006 5:42:17 pm</p>
+    <p class="author">vytis</p>
+</div>
+
+<div class="attribute-short">
+i have 100 sites XXX.site.com  related with siteacess the same as XXX part.<br />
+But there is several exceptions: admin.site.com related with access &quot;forum_admin&quot;, and xxxxx.com related site access &quot;aaaa&quot;   <br />
+<br />
+Can i use map for exceptions, and regexp for the rest? 
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="13528" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/eZ-Publish/Technical-manual/3.9/Reference/Configuration-files/site.ini/SiteAccessSettings/HostMatchType" />
+
+</form>
+
+<ul>    <li class="comment-bglight"><div class="padding">
+    <div class="content-view-line">
+<div class="class-comment">
+
+<form method="post" action="https://doc.ez.no/content/action">
+
+<div id="comment13529" class="attribute-heading">
+<h2>Re: can i use two matching types?</h2>
+</div>
+
+<div class="attribute-byline float-break">
+    <p class="date">Thursday 09 November 2006 7:25:15 pm</p>
+    <p class="author">vytis</p>
+</div>
+
+<div class="attribute-short">
+I seems, that it is not posssible. But, after some modifications of acess.php <a href="http://issues.ez.no/IssueView.php?Id=9387&amp;" title="http://issues.ez.no/IssueView.php?Id=9387&amp;">http://issues.ez.no/IssueView.php?Id=9387&amp;</a> , it became possible... 
+</div>
+
+<input class="button" type="submit" name="NewButton" value="Reply" />
+<input type="hidden" name="NodeID" value="13529" />
+<input type="hidden" name="ClassID" value="17" />
+     
+<input type="hidden" name="RedirectURIAfterPublish" value="/eZ-Publish/Technical-manual/3.9/Reference/Configuration-files/site.ini/SiteAccessSettings/HostMatchType" />
+
+</form>
+
+
+</div>
+</div>    </div></li></ul>
+</div>
+</div>    </div></li></ul>
+</div>
+<div class="toolbar">
+
+<form method="post" action="https://doc.ez.no/content/action">
+<input class="button" type="submit" name="NewButton" value="New comment" />
+<input type="hidden" name="NodeID" value="13527" />
+<input type="hidden" name="RedirectURIAfterPublish" value="eZ-Publish/Technical-manual/3.9/Reference/Configuration-files/site.ini/SiteAccessSettings/HostMatchType" />
+<input type="hidden" name="ClassID" value="17" />
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+<!-- Main area content: END -->
+
+</div>
+</div>
+<!-- Main area: END -->
+<hr class="hide" />
+
+</div></div></div>
+
+
+
+</div>
+<!-- Complete page area: END -->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-303624-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+<script type="text/javascript">
+(function()
+{var ff=document.createElement('script');ff.type='text/javascript';ff.async=true;ff.src='https://secure.liveviewer.ez.no/statjs/sst-120-1304513615/stat.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ff,s);}
+)();
+</script>
+
+
+</body>
+</html>
+
+<!-- th[eZ] 20050804 -->
