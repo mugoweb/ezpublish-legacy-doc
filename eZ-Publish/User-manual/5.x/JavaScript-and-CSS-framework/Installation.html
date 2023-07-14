@@ -52,7 +52,7 @@
 <div id="page">
 
 
-<div><a href="https://www.ibexa.co"><img class="logotype" width="100" height="50" src="https://ibexa-lookandfeel.s3-eu-west-1.amazonaws.com/ibexa/assets/images/ibexa_logo.svg" alt="ibexa"></a></div>
+<div><a href="https://www.ibexa.co"><img class="logotype" width="100" height="50" src="/design/standard/images/ibexa_logo.svg" alt="ibexa"></a></div>
 <div id="page-content-position"><div id="page-content-position-inner"><div id="page-content">
 
 <!-- Path area: START -->
@@ -88,8 +88,7 @@
 
 <!-- Main area: START -->
                                     <div id="ezp5disclaimer">
-                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 5.x.<br>
-                For 5.x documentation covering <em>Platform</em> see <a href="https://doc.ez.no/display/MAIN/eZ+Documentation+Center">eZ Documentation Center</a>, for difference between <em>legacy</em> and <em>Platform</em> see <a href="https://doc.ez.no/pages/viewpage.action?pageId=11403666">5.x Architecture overview</a>.</p>
+                <p><strong style="color: red">Caution:</strong> This documentation is for <strong>eZ Publish</strong> <em>legacy</em>, from version 3.x to 5.x.<br></p>
             </div>
             
 <div id="page-width5">
@@ -448,15 +447,15 @@
  <b>Rewrite Rules for lib folder</b> <br> eZ JSCore extension require correct Rewrite Rules in order to load the necessary yui (yahoo user interface) files from the file system. This is only required when this INI setting in ezjscore.ini is disabled.<pre class="wordwrap"><span class="line">[eZJSCore]LoadFromCDN=disabled</span>
 </pre>If this is the case add the following line to your Virtual-Host setup<pre class="wordwrap"><span class="line">RewriteRule ^/extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascripts?)/.* - [L]</span>
 </pre></div></li><li><div>
- <b>Rewrite Rules for script/css packing</b> <br> eZ JSCore packs JavaScript/CSS files together in order to decrease server requests and file size for faster download. These changes are already considered in the <a href="https://confluence.ez.no/display/EZP/Virtual+host+setup" target="_self">Virtual Host setup</a> documentation for eZ Publish 5.x.
+ <b>Rewrite Rules for script/css packing</b> <br> eZ JSCore packs JavaScript/CSS files together in order to decrease server requests and file size for faster download. These changes are already considered in the <span class="tombstone">Virtual Host setup</span> documentation for eZ Publish 5.x.
 <ul>
 <li><div><p>
 <b> <i>.htaccess</i> </b> <br> add:</p><pre class="wordwrap"><span class="line">RewriteRule ^var/([^/]+/)?storage/images(-versioned)?/.* - [L]</span>
 <span class="line">RewriteRule ^var/([^/]+/)?cache/(texttoimage|public)/.* - [L]</span>
-</pre><p>For more details please check the <a href="https://confluence.ez.no/display/EZP/htaccess+example" target="_self">.htaccess configuration example for eZ Publish 5.x</a>.</p></div></li><li><div><p>
+</pre><p>For more details please check the <span class="tombstone">.htaccess configuration example for eZ Publish 5.x</span>.</p></div></li><li><div><p>
  <b> <i>Virtual Host mode</i> </b> <br> add:</p><pre class="wordwrap"><span class="line">RewriteRule ^/var/([^/]+/)?storage/images(-versioned)?/.* - [L]</span>
 <span class="line">RewriteRule ^/var/([^/]+/)?cache/(texttoimage|public)/.* - [L]</span>
-</pre><p>For more details please check the <a href="https://confluence.ez.no/display/EZP/Virtual+host+example" target="_self">Virtual Host configuration example for eZ Publish 5.x</a>.</p></div></li><li><div><p>If you don't manage to get these changes working, you can disable this feature setting ezjscore.ini</p><pre class="wordwrap"><span class="line">[eZJSCore]</span>
+</pre><p>For more details please check the <span class="tombstone">Virtual Host configuration example for eZ Publish 5.x</span>.</p></div></li><li><div><p>If you don't manage to get these changes working, you can disable this feature setting ezjscore.ini</p><pre class="wordwrap"><span class="line">[eZJSCore]</span>
 <span class="line">Packer=disabled</span>
 </pre></div></li>
 </ul>

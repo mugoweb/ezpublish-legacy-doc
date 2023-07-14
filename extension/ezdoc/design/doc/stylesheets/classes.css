@@ -443,7 +443,7 @@ table.renderedtable th p
 
 table.renderedtable td
 {
-    padding: 0 0.75em 0.25em 0;   
+    padding: 0 0.75em 0.25em 0;
 }
 
 
@@ -457,12 +457,12 @@ div#main div.image a, div#main div.attribute-image a
 
 div.area-docmain-normal table.renderedtable, div.area-docmain-normal table.renderedtable td
 {
-    border-color: #eaeaea;    
+    border-color: #eaeaea;
 }
 
 table.renderedtable td
 {
-    padding: 0.25em;    
+    padding: 0.25em;
 }
 
 
@@ -529,7 +529,7 @@ div.content-view-full div.class-product div.attribute-image
 div.attribute-price
 {
     font-weight: bold;
-    margin-bottom: 0.5em;    
+    margin-bottom: 0.5em;
 }
 
 input.button-addtobasket
@@ -593,7 +593,7 @@ table.shop-basket tr.bgdark, table.shop-basket tr.bgdark-sub
 
 table.shop-basket div.shop-option
 {
-    margin: 0.5em 0 0.25em 0;    
+    margin: 0.5em 0 0.25em 0;
 }
 
 table.shop-basket tr.sum th
@@ -716,12 +716,12 @@ table.forum pre
 
 table.forum tr.bglight pre
 {
-    background-color: #ffffff;    
-}   
+    background-color: #ffffff;
+}
 
 table.forum tr.bgdark pre
 {
-    background-color: #ffffff;    
+    background-color: #ffffff;
 }
 
 div#main table.forum td.buttons a
@@ -927,4 +927,24 @@ ul#thirdlevel-menu li a#selected
 ul#thirdlevel-menu li.level1
 {
     margin-left: 1.2em;
+}
+
+span.tombstone
+{
+    position: relative ;
+    text-decoration: line-through ;
+    padding-left: 20px ;
+    border-left: 2px solid red ;
+}
+
+span.tombstone:before
+{
+    position: absolute ;
+    content: '' ;
+    height: 16px ;
+    width: 16px ;
+    left : 2px ;
+    bottom : 0px ;
+    background-image: url('/design/standard/images/tombstone.svg') ;
+    background-size: contain ;
 }
