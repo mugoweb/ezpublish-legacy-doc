@@ -1,0 +1,4 @@
+httpx==0.24.1
+loguru==0.7.0
+lunr==0.6.2
+parsel==1.8.1
